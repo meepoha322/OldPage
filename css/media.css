@@ -1,0 +1,185 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .scope{
+        display: none;
+    }
+    #menu{
+        visibility: visible !important;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    
+    header nav ul li{
+        margin-right: 50px;
+    }
+    header nav ul li:first-child{
+         margin-right: 50px;
+    }
+    
+    .benefits ul li:first-child{
+        margin-top: 0;
+    }
+    
+    .benefits ul li{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .contact form textarea{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    
+    .opinions .comment{
+        padding-right: 20px;
+    }
+  
+    
+        #menu{
+        visibility: visible !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+#toggle{
+        display: block;
+    
+    }
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+    
+    
+    footer ul{
+        display: block;
+        float: left;
+    }
+    footer ul li{
+        display: block;      
+    }
+    footer ul li:after{
+        content: '';
+    }
+
+    #menu {
+      background-color: cadetblue;
+      z-index: 10;
+      position: fixed;
+      width: 200px;
+      padding: 10px;
+      margin: auto;
+      margin-top: 15px;
+      text-align: center;
+      border-radius: 4px;
+
+      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+      /* just for this demo */
+      opacity: 1;
+
+      transition: opacity .4s;
+    }
+
+    
+#menu ul, #menu li, #menu li a {
+
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding-top: 10px;
+}
+#menu li a {
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s;
+}
+#menu li a:hover,
+#menu li a:focus {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+    
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.opinions .comment{
+        padding-right: 30px;
+    }
+    
+   .opinions .right-col{
+            width: 190px;
+            float: left;
+        }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+ #toggle{
+        display: none;
+    }
+    
+        #menu{
+        visibility: visible !important;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #toggle{
+        display: none;
+    }
+    
+        #menu{
+        visibility: visible !important;
+    }
+}
